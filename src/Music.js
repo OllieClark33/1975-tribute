@@ -26,7 +26,7 @@ class Music extends Component {
                   className="album-cover"
                 />
                 <div className="overlay">
-                  <h3 className="overlay-title">ILIWYSFYASBYSUOI</h3>
+                  <h3 className="overlay-title">I Like It When You Sleep</h3>
                   <p className="overlay-text">Released: February 2016</p>
                 </div>
               </div>
@@ -40,7 +40,7 @@ class Music extends Component {
                   id="third-album"
                 />
                 <div className="overlay">
-                  <h3 className="overlay-title">ABIIOR</h3>
+                  <h3 className="overlay-title">A Brief Inquiry into Online Relationships</h3>
                   <p className="overlay-text">Released: November 2018</p>
                 </div>
               </div>
@@ -51,7 +51,7 @@ class Music extends Component {
                   className="album-cover"
                 />
                 <div className="overlay">
-                  <h3 className="overlay-title">NOCAF</h3>
+                  <h3 className="overlay-title">Notes on a Conditional Form</h3>
                   <p className="overlay-text">Released: May 2020</p>
                 </div>
               </div>
