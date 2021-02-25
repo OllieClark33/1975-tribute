@@ -55,9 +55,6 @@ class Footer extends Component {
               SOCIALS
             </a>
           </div>
-          <div id="tag-container">
-            <span id="tag">by Ollie Clark</span>
-          </div>
         </div>
       </footer>
     );

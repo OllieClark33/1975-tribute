@@ -10,13 +10,13 @@ class Music extends Component {
             <div className="row">
               <div className="music-img">
                 <img
-                  src="/images/first-album.png"
+                  src="images/first-album.png"
                   alt="The 1975"
                   className="album-cover"
                 />
                 <div className="overlay">
                   <h3 className="overlay-title">The 1975</h3>
-                  <p className="overlay-text">details blah</p>
+                  <p className="overlay-text">Released: September 2013</p>
                 </div>
               </div>
               <div className="music-img">
@@ -27,7 +27,7 @@ class Music extends Component {
                 />
                 <div className="overlay">
                   <h3 className="overlay-title">ILIWYSFYASBYSUOI</h3>
-                  <p className="overlay-text">details blah</p>
+                  <p className="overlay-text">Released: February 2016</p>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@ class Music extends Component {
                 />
                 <div className="overlay">
                   <h3 className="overlay-title">ABIIOR</h3>
-                  <p className="overlay-text">details blah</p>
+                  <p className="overlay-text">Released: November 2018</p>
                 </div>
               </div>
               <div className="music-img">
@@ -52,7 +52,7 @@ class Music extends Component {
                 />
                 <div className="overlay">
                   <h3 className="overlay-title">NOCAF</h3>
-                  <p className="overlay-text">details blah</p>
+                  <p className="overlay-text">Released: May 2020</p>
                 </div>
               </div>
             </div>
@@ -65,6 +65,7 @@ class Music extends Component {
                 title="The 1975 Live at the O2"
                 src="https://www.youtube.com/embed/5kiY87XLahk?mute=0&controls=1"
                 frameBorder={0}
+                allowFullScreen
               />
             </div>
           </div>

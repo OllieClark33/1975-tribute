@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: $dark-grey;
+    background-color: $internet-red;
     #footer-container {
         display: flex;
         flex-direction: column;
@@ -31,6 +31,10 @@
             #footer-logo-container a {
                 font-weight: 600;
                 font-size: 1.25rem;
+                transition: all .1s ease-out;
+                &:hover {
+                    color: $light-grey;
+                }
                 @include query(tablet) {
                     font-size: 2rem;
                 }
@@ -52,35 +56,41 @@
                 font-size: 1.1rem;
                 transition: all .1s ease-out;
                 &:hover {
-                    color: $internet-red;
+                    color: $light-grey;
                 }
                 @include query(tablet) {
                     font-size: 1.9rem;
+                }
+                @include query(desktop) {
+                    font-size: 1.5rem;
                 }
             }
     
             @include query(desktop) {
                 flex-direction: row;
                 justify-content: space-between;
-                border-bottom: 3px solid $light-grey;
+                border-bottom: 3px solid $white;
             }
         }
     
         #footer-nav {
             display: flex;
             flex-direction: column;
-    
+            margin-top: $margin / 8;
+
             .footer-link {
                 font-size: 0.8rem;
                 transition: all .1s ease-out;
                 &:hover {
-                    color: $internet-red;
+                    color: $light-grey;
                 }
                 @include query(tablet) {
                     font-size: 1.1rem;
                 }
                 @include query(desktop) {
                     padding-left: $padding * 2;
+                    font-size: 0.9rem;
+                    font-weight: 600;
                 }
             }
     
@@ -89,14 +99,6 @@
                 justify-content: flex-end;
                 margin-top: $margin / 2;
     
-            }
-        }
-    
-        #tag-container {
-            color: $light-grey;
-            font-size: 0.8rem;
-            @include query(tablet) {
-                font-size: 1.1rem;
             }
         }
 
