@@ -1,6 +1,6 @@
 # The 1975 Tribute Page 
 #### By Oliver Clark
-######For Luminance Interview Assessment
+###### For Luminance Interview Assessment
 
 #### Live Demo: https://priceless-tereshkova-aac774.netlify.app
 
