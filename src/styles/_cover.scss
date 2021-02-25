@@ -1,0 +1,39 @@
+#cover {
+    display: flex;
+    justify-content: center;
+    padding-bottom: $padding * 2;
+
+    a:hover {
+        opacity: 1;
+    }
+
+    #cover-photo-container {
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            @include query(tablet) {
+                border-radius: 15px;
+            }
+        }
+    
+        .cover-overlay {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            span {
+                text-shadow: 0 0 10px black;
+                font-size: 1.5rem;
+                font-weight: 600;
+                @include query(tablet) {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

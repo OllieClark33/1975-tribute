@@ -1,0 +1,11 @@
+
+@mixin query($size) {
+    @each $key, $value in $bp {
+        @if ($size == $key) {
+            @media (min-width: $value) {
+                @content;
+            }
+        }
+    }
+}
+

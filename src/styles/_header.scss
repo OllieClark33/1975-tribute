@@ -1,0 +1,66 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: $padding;
+    @include query(tablet) {
+       padding: $padding * 2;
+    }
+
+    @include query(desktop) {
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: $margin;
+    }
+
+    #nav-logo-container {
+        flex-basis: 30%;
+        color: $dark-grey;
+        @include query(tablet) {
+            font-size: 2rem;
+            flex-basis: 50%; 
+        }
+        @include query(desktop) {
+            padding-left: $padding;
+            font-size: 1rem;
+            flex-basis: 70%;
+        }
+    }
+
+    nav {
+        flex-basis: 70%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: $padding * 2;
+        a {
+            font-size: 0.8rem;
+            color: $dark-grey;
+            text-decoration: none;
+            transition: all .1s ease-out;
+            &:hover {
+                color: $internet-red;
+            }
+            &:visited {
+                color: $dark-grey;
+            }
+        }
+        @include query(tablet) {
+            flex-basis: 50%;
+            a {
+                font-size: 1.25rem;
+            }
+        }
+
+        @include query(desktop) {
+            justify-content: space-around;
+            flex-basis: 30%;
+            a {
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+}

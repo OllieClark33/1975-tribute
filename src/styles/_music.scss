@@ -1,0 +1,113 @@
+#music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding * 2;
+    @include query(tablet) {
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    #music-title {
+        @include query(tablet) {
+            font-size: 2rem;
+        }
+        @include query(desktop) {
+            margin-bottom: $margin;
+        }
+    }
+
+    #music-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .music-tile-row {
+            @include query(desktop) {
+                display: flex;
+                gap: $gap;
+                margin-bottom: $margin * 2;
+            }
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            width: 100%; 
+            text-align: center;
+
+            @include query(tablet) {
+                flex-direction: row;
+                gap: $gap;
+            }
+
+            .music-img {
+                position: relative;
+                padding-bottom: $padding;
+                @include query(tablet) {
+                    flex-basis: 50%;
+                    gap: $gap;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    @include query(tablet) {
+                        border-radius: 15px;
+                    }
+                }
+    
+                .overlay {
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover {
+                    .overlay {
+                        opacity: 1;
+                    }
+                }
+
+                #third-album {
+                    border: 1px solid #CCC;
+                }
+            }
+    
+        }
+
+        .video-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: $margin;
+            @include query(desktop) {
+                margin-bottom: $margin * 4;
+            }
+
+            #video-title {
+                @include query(tablet) {
+                    font-size: 2rem;
+                }
+            }
+
+            #video-container {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: auto;
+                padding-top: 56.25%;
+    
+                #video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+}
